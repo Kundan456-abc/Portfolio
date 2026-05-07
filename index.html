@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kundan Khilare Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background: linear-gradient(135deg,#6d5dfc,#4b3cd1);
+  color:#333;
+}
+
+/* CONTAINER */
+.container{
+  width:90%;
+  margin:40px auto;
+  background:#fff;
+  border-radius:25px;
+  padding:30px;
+}
+
+/* NAVBAR */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+nav h2{
+  color:#6d5dfc;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin:0 15px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#555;
+  font-weight:500;
+}
+
+.contact-btn{
+  background:#6d5dfc;
+  color:#fff;
+  padding:10px 20px;
+  border-radius:20px;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  margin-top:50px;
+}
+
+.hero-text{
+  width:50%;
+}
+
+.hero-text h1{
+  font-size:40px;
+}
+
+.hero-text span{
+  color:#6d5dfc;
+}
+
+.hero-text p{
+  margin:20px 0;
+  color:#666;
+}
+
+.buttons button{
+  padding:12px 20px;
+  border:none;
+  border-radius:20px;
+  margin-right:10px;
+  cursor:pointer;
+}
+
+.btn1{
+  background:#6d5dfc;
+  color:#fff;
+}
+
+.btn2{
+  background:#eee;
+}
+
+/* IMAGE */
+.hero-img{
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  border:10px solid #6d5dfc;
+  overflow:hidden;
+}
+
+.hero-img img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+/* SECTIONS */
+section{
+  margin-top:50px;
+}
+
+h2{
+  margin-bottom:15px;
+  color:#6d5dfc;
+}
+
+p{
+  line-height:1.6;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:#f4f4f4;
+  padding:15px;
+  border-radius:10px;
+}
+
+/* FOOTER */
+footer{
+  margin-top:40px;
+  text-align:center;
+  color:#666;
+}
+
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+  }
+  .hero-text{
+    width:100%;
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- NAVBAR -->
+<nav>
+  <ul>
+    <li><a href="#">home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="#skills">skills</a></li>
+    <li><a href="#contact">contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-text">
+    <h1>I'm Kundan Khilare,<br><span>Mechanical Engineer</span></h1>
+    <p>Enthusiastic and aspiring engineer passionate about innovation, problem-solving, and continuous learning.</p>
+
+    <div class="buttons">
+      <button class="btn1">Contact Me</button>
+      <button class="btn2">View Portfolio</button>
+    </div>
+  </div>
+
+  <div class="hero-img">
+    <!-- Replace with your image -->
+    <img src="c:\Users\DELL\Desktop\YP\image.jpg">
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an enthusiastic and aspiring Mechanical Engineer with a strong passion for learning and innovation. 
+    I enjoy exploring new technologies and continuously improving my technical and problem-solving skills. 
+    With good communication abilities and a proactive mindset, I am always ready to take on new challenges 
+    and work collaboratively to achieve meaningful results.
+  </p>
+</section>
+
+<!-- EDUCATION -->
+<section>
+  <h2>Education</h2>
+  <p>
+    SSC: Shree Wardhman Vidyalay & Jr. College<br>
+    HSC:  Shree Wardhman Vidyalay & Jr. College<br>
+    B.Tech Mechanical Engineering: MIT Academy of Engineering (MITAOE)
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="grid">
+    <div class="card">Communication Skills</div>
+    <div class="card">Teamwork</div>
+    <div class="card">Python Basics</div>
+    <div class="card">HTML Basics</div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section>
+  <h2>Achievements</h2>
+  <ul>
+    <li>1st rank in Shree Classes (CET)</li>
+    <li>2nd rank in hsc result in collge</li>
+  </ul>
+</section>
+
+<!-- HOBBIES -->
+<section>
+  <h2>Hobbies</h2>
+  <p>Leadership, Bike riding</p>
+</section>
+
+<!-- GOALS -->
+<section>
+  <h2>Career Goals</h2>
+  <p>
+    I plan to pursue M.Tech after B.Tech and prepare for MPSC. 
+    To become an entrepreneur.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: khilarekundan@gmai;l.com</p>
+  <p>Phone: 8177812030</p>
+</section>
+
+<footer>
+  <p>© 2026 Kundan Khilare</p>
+</footer>
+
+</div>
+
+</body>
+</html>
